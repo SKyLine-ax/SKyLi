@@ -58,21 +58,26 @@ header img {
     margin-left: 20px;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 header h1 {
-    margin-top: -15vh;
     margin: 0;
 }
 
 header p {
-    
-    padding: 15px;
-    margin-top: 120px;
+    margin: 0;
+    opacity: 0.8;
+    padding-top: 12px; 
 }
 
 .dis{
@@ -80,7 +85,7 @@ header p {
 }
 
 .streak{
-    margin-right: 16%;
+    margin-right: 21%;
 }
 
 #g-st {
@@ -88,8 +93,8 @@ header p {
     position: relative;
     top: -70px;
     justify-content: flex-end;
-    margin-left: 18vh;
-    width: 550px;
+    margin-left: 15vh;
+    width: 660px;
     height: 260px;
     backdrop-filter: blur(15px);
     background: rgba(255,255,255,0.1);
@@ -100,4 +105,52 @@ header p {
 
 #ts {
     padding-left: 30px;
+
+}
+
+.social-label {
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 14px 0 8px;
+  text-align: center;
+}
+
+.social-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 30px;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 80px;
+  height: 75px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.icon-btn svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+
+.icon-btn:hover {  
+  background: rgba(74,179,244,0.15);
+  border-color: #4ab3f4;
+  color: #4ab3f4;
+  transform: translateY(-2px);
 }
